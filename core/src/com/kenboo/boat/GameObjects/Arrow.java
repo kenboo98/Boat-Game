@@ -1,11 +1,10 @@
-package com.kenboo.boat;
+package com.kenboo.boat.GameObjects;
 
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.PolygonRegion;
 import com.badlogic.gdx.graphics.g2d.PolygonSprite;
 import com.badlogic.gdx.graphics.g2d.PolygonSpriteBatch;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 
@@ -14,18 +13,16 @@ import com.badlogic.gdx.math.MathUtils;
  */
 
 public class Arrow {
-    PolygonSprite sprite;
-    Pixmap pix;
-    PolygonRegion region;
-    Texture pixTexture;
-
-    float[] vertices;
-    short[] triangles;
-
     final float WIDTH = 5;
     final float HEIGHT = 5;
     //radius, distance from center of the boat to the center of the arrow
     final float RADIUS = 30;
+    float[] vertices;
+    short[] triangles;
+    private PolygonSprite sprite;
+    private Pixmap pix;
+    private PolygonRegion region;
+    private Texture pixTexture;
     public Arrow(){
         pix = new Pixmap(1,1, Pixmap.Format.RGBA8888);
         pix.setColor(0xfffd85ff);

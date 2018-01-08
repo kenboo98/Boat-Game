@@ -7,6 +7,8 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.PolygonSpriteBatch;
 import com.badlogic.gdx.math.Vector3;
+import com.kenboo.boat.GameObjects.Boat;
+import com.kenboo.boat.GameObjects.MapAssets;
 
 
 public class GameScreen implements Screen {

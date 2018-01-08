@@ -1,4 +1,4 @@
-package com.kenboo.boat;
+package com.kenboo.boat.GameObjects;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.PolygonSpriteBatch;
@@ -12,16 +12,15 @@ import com.badlogic.gdx.utils.JsonValue;
  */
 
 public class MapAssets {
+    public Dock dock;
     //all the json classes needed to load the data
     //highest level json value
     JsonValue jsonFile;
     JsonValue.JsonIterator islandsJson;
     JsonValue.JsonIterator wavesJson;
-
     //all the assets we need to load. The islands are in array format
     Array<Land> islands;
     Array<WaveArea> waves;
-    Dock dock;
 
     public MapAssets(int level){
         islands = new Array<Land>();
@@ -68,7 +67,7 @@ public class MapAssets {
             //if(aLand.landSprite.getBoundingRectangle().overlaps(boat.boatSprite.getBoundingRectangle())){
             if(Intersector.overlapConvexPolygons(aLand.polygon, boat.polygon)){
                 return true;
-            };
+            }
 
 
             //}

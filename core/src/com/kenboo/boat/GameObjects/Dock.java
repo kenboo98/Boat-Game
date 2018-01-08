@@ -1,4 +1,4 @@
-package com.kenboo.boat;
+package com.kenboo.boat.GameObjects;
 
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
@@ -6,7 +6,6 @@ import com.badlogic.gdx.graphics.g2d.PolygonRegion;
 import com.badlogic.gdx.graphics.g2d.PolygonSprite;
 import com.badlogic.gdx.graphics.g2d.PolygonSpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Polygon;
 
 /**
@@ -15,7 +14,7 @@ import com.badlogic.gdx.math.Polygon;
 
 public class Dock {
     //A square where the ship has to dock to complete level
-    PolygonSprite dockSprite;
+    public PolygonSprite dockSprite;
     PolygonRegion region;
     //texture for the color
     Pixmap pix;

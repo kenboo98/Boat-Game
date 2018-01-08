@@ -1,14 +1,11 @@
-package com.kenboo.boat;
+package com.kenboo.boat.GameObjects;
 
-import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.PolygonRegion;
 import com.badlogic.gdx.graphics.g2d.PolygonSprite;
 import com.badlogic.gdx.graphics.g2d.PolygonSpriteBatch;
-import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Polygon;
 
@@ -17,8 +14,9 @@ import com.badlogic.gdx.math.Polygon;
  */
 
 public class Boat {
-    PolygonSprite boatSprite;
-    PolygonRegion region;
+    public PolygonSprite boatSprite;
+    //arrow for pointing to the dock
+    public Arrow arrow;
     //texture for the color
     Pixmap pix;
     Texture pixTexture;
@@ -41,11 +39,9 @@ public class Boat {
     float deltaY;
     //polygon to use for collision
     Polygon polygon;
-
-    //arrow for pointing to the dock
-    Arrow arrow;
     float width;
     float height;
+    private PolygonRegion region;
     public Boat(float width, float height){
         //vertices of the boat
         this.height = height;
