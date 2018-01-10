@@ -10,15 +10,19 @@ Also works on desktop and comes with a level editor.
 Simply clone the repository and import it into Android Studio.
 Do not update Gradle as this would interfere with Libgdx.
 
-IOS and HTML builds are untested.
 
+IOS and HTML builds are untested.
+## Trying it out
+ Download the file `\apk\android.apk` and install it on your Android device.
 ## Using the level editor
 A level editor has been made using python and pygame. The python
-file is placed inside the Level Editor directory. You can add your
+file is placed inside the Level Editor directory. Please run this with
+Pygame installed. You can add your
 own levels by copying the contents of the level editor outputs into json
 files in the `\android\assets` directory.
 #### Short cuts
 ```
+WASD - Move around
 LEFT_CLICK - Add a vertex in for a land or wave polygon
 RIGHT_CLICK - Move the Dock
 P - Output level data
